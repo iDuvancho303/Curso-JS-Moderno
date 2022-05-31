@@ -10,3 +10,8 @@ console.log(producto.concat(precio));
 console.log(producto.concat('esta en rebaja'));
 // me devuelve "telefono de 20 pulgadas esta en rebaja"
 
+// otra forma de concatenar es usando el simbolo de suma
+console.log(producto + precio);
+// tambien le puedes añadir texto
+console.log(producto + precio + ' Wow! que bien!');
+// me devuelve "telefono de 20 pulgadas 30 USD Wow! que bien!"
