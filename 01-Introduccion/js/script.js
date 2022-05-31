@@ -6,3 +6,6 @@ document.querySelector('.contenido').innerHTML = `${nombre} esta aprendiendo JS 
 
 // Asigna el valor hacia la variable producto
 const producto = 'Monito de 24 pulgadas';
+
+
+jhjhjh
