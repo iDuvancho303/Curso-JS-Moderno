@@ -13,4 +13,13 @@ console.log(producto.replace('telefono', 'androide inteligente'));
 console.log(producto.slice(0, 8));
 // me devuelve la palabra "telefono" solamente
 
+// otro ejemplo cortando texto
+console.log(producto.slice(0, 14));
+// me devuelve "telefono de 20"
+
+//alternative a slice usando .substring
+//Cual es la differecia entre ambos?
+// si le paso un numero mayor de inicio a el numero final slice no hace nada pero
+//.substring si lo arregla o corrige por ti
+console.log(producto.substring(0, 8));
 
