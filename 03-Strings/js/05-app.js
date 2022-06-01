@@ -23,3 +23,12 @@ console.log(producto.slice(0, 14));
 //.substring si lo arregla o corrige por ti
 console.log(producto.substring(0, 8));
 
+// un ejemplo
+const usuario = 'Duvan'
+
+console.log(usuario.slice(3,0));
+// me devuelve "empty string" .slice no lo puede corregir
+
+console.log(usuario.substring(3, 0));
+// me devuelve "duv" con .substring si me corrige mi error
+
