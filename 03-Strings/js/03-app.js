@@ -15,3 +15,6 @@ console.log(producto + precio);
 // tambien le puedes añadir texto
 console.log(producto + precio + ' Wow! que bien!');
 // me devuelve "telefono de 20 pulgadas 30 USD Wow! que bien!"
+
+// otra forma de concatenar usando +
+console.log('el producto ' + producto + 'tiene un precio actualmente de ' + precio);
