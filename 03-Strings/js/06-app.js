@@ -14,11 +14,16 @@ console.log(`${producto} ${texto}`);
 
 
 //.split se usa para dividir un string
-const actividad = "Estoy aprendiendo JS moderno"
+const actividad = "Estoy aprendiendo JS moderno";
 
 console.log(actividad.split(" "));
 // me devuelve "estoy" "aprendiendo" "JS" "moderno"
 
+// otro ejemplo usando .split
+const hobbies = 'leer, patinar, cantar, bailar';
+
+console.log(hobbies.split(","));
+// me devuelve "leer" "patinar" "cantar" "bailar"
 
 
 
