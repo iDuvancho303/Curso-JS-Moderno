@@ -18,3 +18,13 @@ console.log(producto + precio + ' Wow! que bien!');
 
 // otra forma de concatenar usando +
 console.log('el producto ' + producto + 'tiene un precio actualmente de ' + precio);
+// me devuelve "el producto telefono de 20 pulgadas tiene un precio actualmente de 30 USD"
+
+
+
+
+// concatenando usando "template strings" que es una version nueva de concatenar
+console.log(`el producto ${producto}, tiene un precio de ${precio}`);
+// me devuelve "el producto telefono de 20 pulgadas, tiene un precio de 30 USD"
+
+
