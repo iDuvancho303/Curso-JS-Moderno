@@ -18,4 +18,13 @@
  // convertir un string a un numero
  console.log(numero1 === parseInt(numero2));
  // nos devuelve "true" porque ahora JS si reconoce numero2 dos como un numero y no un string
+
+
+ // comparar si son diferentes
+ const password1 = "admin";
+ const password2 = "admin303";
+
+ console.log(password1 != password2);
+ // nos devuelve "true" porque si son diferentes, tienen diferente valor
  
+
