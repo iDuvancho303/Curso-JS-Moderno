@@ -14,4 +14,4 @@ const producto = {
 }
 
 console.log(producto);
-// asegurate de usar ":" y las "," para anadir mas datos
+// asegurate de usar ":" y las "," para anadir mas valores
