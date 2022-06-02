@@ -2,7 +2,7 @@
 const numero1 = "20";
 const numero2 = "20.2";
 const numero3 = "treinta";
-const numero4 = 30.5;
+const numero4 = 30;
 
 // convertir un strin a numero usando parseint, parseint connvierte a numero entero
 console.log(Number.parseInt(numero1)); // convertido a un numero
@@ -19,5 +19,9 @@ console.log(Number.parseFloat(numero2))
 // revisar si un numero es entero o no
 console.log(Number.isInteger(numero2));
 // me devuelve "false" porque numero2 no es un numero entero
+
+console.log(Number.isInteger(numero4));
+// me devuelve "true" porque numero1 si es un numero entero
+
 
 
