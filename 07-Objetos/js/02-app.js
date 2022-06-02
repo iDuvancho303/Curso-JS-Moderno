@@ -11,5 +11,6 @@ console.log(producto);
 console.log(producto.nombre);
 // nos devuelve "monitor de 20 pulgadas"
 
-console.log(producto.disponible);
+//tambien puede accede a un valor de esta manera
+console.log(producto['disponible']);
 // nos devuelve "true"
