@@ -8,3 +8,10 @@ console.log(boolean1);
 console.log(boolean2);
 // nos devuelve "false"
 
+// usar "typeOf" para saber que tipo de dato es
+console.log(typeof boolean2);
+// nos devuelve "boolean" porque efectivamente si es une boolean
+
+ 
+
+
