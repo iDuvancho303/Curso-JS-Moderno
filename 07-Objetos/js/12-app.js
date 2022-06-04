@@ -1,7 +1,7 @@
 // el "object constructor"
 
 
-// este es un object literal
+// este es un object literal (este se usa mas)
 const producto = {
     nombre: "Monitor de 20 pulgadas",
     precio: 300,
@@ -11,6 +11,15 @@ const producto = {
     }
 }
 
-// este es un object constructor
 
+
+// este es un object constructor
+function producto(nombre, precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.dipsonible = true;
+}
+
+const producto2 = new producto('monitor de 24 pulgadas', 500)
+console.log(producto2);
 
