@@ -1,5 +1,5 @@
 // recorrer un array
-const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Junio', 'Julio']
+const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Junio', 'Julio'];
 
 console.table(meses);
 
