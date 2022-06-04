@@ -7,6 +7,8 @@ const producto = {
     disponible: true,
 }
 
+// congela lo que es el objeto
+// en este caso "disponible" sigue siendo "true" aunque yo lo cambie a "false"
 Object.freeze(producto);  // aqui solo aprendi como usar este objeto
 
 producto.disponible = false;
