@@ -12,3 +12,7 @@ const producto = {
 console.log(producto); // accediendo a el objeto
 console.log(producto.informacion);  // accediendo a el objeto dentro del objeto
 console.log(producto.informacion.medida); // me devuelve 1m
+
+
+
+
