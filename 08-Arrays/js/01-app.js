@@ -11,7 +11,7 @@ console.log(numeros);
 console.log(meses);
 
 
-// un arreglo que contiene datos de todo tipo
+// un arreglo que contiene datos de todo tipo incluso un objeto
 const deTodo = ['hola', 10, true, 'si', null, {nombre: 'duvan', trabajo: 'programador'}];
 
 console.log(deTodo);
