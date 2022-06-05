@@ -18,4 +18,9 @@ const producto3 = {
     Precio: 100,
 }
 
-console.table(carrito);
+
+let resultado = [...carrito, producto1];
+
+
+
+console.table(resultado);
