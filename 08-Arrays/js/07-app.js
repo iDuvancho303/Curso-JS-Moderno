@@ -14,7 +14,7 @@ const producto2 = {
 
 const producto3 = {
     nombre: 'Teclado',
-    Precio: 100,
+    precio: 100,
 }
 
 
@@ -29,3 +29,15 @@ carrito.pop();
 
 
 console.table(carrito);
+
+// eliminar del inicio del arreglo
+carrito.shift();
+console.table(carrito);
+// en este caso me elimino el producto1 del arreglo
+
+
+// eliminar un elemento del medio, ni el primero ni el ultimo usando .splice
+carrito.splice(0, 1);
+console.table(carrito);
+//estoy eliminando el array en la posicion 0 y solo es el array
+//si quiero eliminar los arrays que siguen sigo subiendo el segundo numero
