@@ -39,5 +39,5 @@ console.table(carrito);
 // eliminar un elemento del medio, ni el primero ni el ultimo usando .splice
 carrito.splice(0, 1);
 console.table(carrito);
-//estoy eliminando el array en la posicion 0 y solo es el array
+//estoy eliminando el array en la posicion 0 
 //si quiero eliminar los arrays que siguen sigo subiendo el segundo numero
