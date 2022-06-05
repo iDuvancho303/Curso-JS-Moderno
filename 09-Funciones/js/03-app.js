@@ -5,3 +5,7 @@
 alert('Hubo un error...');
 
 prompt('Cual es tu edad?');
+
+parseInt('20'); // esto me convierte el dato a un numero
+
+
