@@ -19,4 +19,13 @@ const producto3 = {
 
 
 carrito.push(producto1, producto2, producto3)
+
+
+// eliminar el ultimo elemento de un arreglo
+carrito.pop();
+// me elimina el ultimo elemento de un arreglo
+// en este caso me elimino producto3
+
+
+
 console.table(carrito);
