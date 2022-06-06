@@ -6,8 +6,8 @@ const aprendiendo = function(tecnologia) {
 aprendiendo('JavaScript');
 
 //con arrow function
-const aprendiendo2 = (tecnologia) => {
-    console.log(`Aprendiendo mas con ${tecnologia}`)
+const aprendiendo2 = (tecnologia, tecnologia2) => {
+    console.log(`Aprendiendo mas con ${tecnologia} y ${tecnologia2}`)
 }
 
-aprendiendo2('Python');
+aprendiendo2('Python', 'React');
