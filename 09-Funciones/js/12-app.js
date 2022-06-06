@@ -7,4 +7,14 @@ const carrito = [
     {nombre: 'headphones', precio: 250},
 ]
 
-const nueboArreglo = carrito.map 
+const nuevoArreglo = carrito.map((producto) => {
+    return `${producto.nombre} - ${producto.precio}`;
+})
+
+console.log(nuevoArreglo);
+
+const nuevoArreglo2 = carrito.forEach((producto) => {
+    console.log(`${producto.nombre} - ${producto.precio}`);
+})
+
+console.log(nuevoArreglo2);
