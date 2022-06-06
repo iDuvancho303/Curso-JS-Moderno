@@ -1,0 +1,1 @@
+// como se comunican las funciones
