@@ -6,3 +6,5 @@
  } else {
      console.log('No es igual');
  }
+
+ // me devuelve "si es igual"
