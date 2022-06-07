@@ -1,0 +1,2 @@
+// iteradores
+// usando "for" loop
