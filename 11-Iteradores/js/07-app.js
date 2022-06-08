@@ -1,3 +1,2 @@
 // usando "for of..."
-
-for
+ // no entendi nada de esto
