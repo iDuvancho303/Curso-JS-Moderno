@@ -1,0 +1,3 @@
+// usando "for of..."
+
+for
