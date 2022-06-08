@@ -11,3 +11,25 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+
+
+
+// comprobar si un valor existe en un arreglo
+// estamos comprobando si "Enero" si existe dentro del array
+
+meses.forEach( mes => {
+    if( mes === 'Enero') {
+        console.log("Enero si existe");
+    }
+
+});
+
+// nos devuelve "enero si existe"
+
+// otra manera de mirar si existe Enero usando .includes
+
+const resultado = meses.includes('Enero');
+console.log(resultado);
+
+// nos devuelve "true" por que si existe ese valor
+
