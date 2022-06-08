@@ -1,4 +1,5 @@
 // "break" y "continue" en un for loop
+// no entendi muy bien cual es la diferencia ente break y continue rn un for loop
 
 for(let i = 0; i <= 10; i++) {
     if(i === 5) {
