@@ -32,4 +32,7 @@ const resultado = meses.includes('Enero');
 console.log(resultado);
 
 // nos devuelve "true" por que si existe ese valor
+// ".includes" solo funciona en un arreglo de indices
+// para un arreglo de objetos se tiene que usar ".some"
 
+// usando ".some" en un array de objetos
