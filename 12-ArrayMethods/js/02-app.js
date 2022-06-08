@@ -23,3 +23,18 @@ meses.forEach((mes, i) => {
 });
 
 // nos devuelve "emcontrado en el indice: 3"
+
+
+// encontrar el indice de Mayo usando ".findIndex" 
+const indice = meses.findIndex( (mes, i) => {
+    if(mes === 'Mayo') {
+        console.log(`Encontrado en el indice ${i}`);
+    }
+})
+
+
+// encontrar un indice de un arreglo de objetos
+const indice2 = carrito.findIndex( producto => producto.precio === 100);
+console.log(indice2);
+
+// nos devuelve "1" se encuentra en la posicion 1
