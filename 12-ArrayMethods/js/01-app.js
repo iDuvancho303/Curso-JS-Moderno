@@ -35,4 +35,11 @@ console.log(resultado);
 // ".includes" solo funciona en un arreglo de indices
 // para un arreglo de objetos se tiene que usar ".some"
 
-// usando ".some" en un array de objetos
+// en un arreglo de objetos se utiliza -- usando ".some" en un array de objetos
+const existe = carrito.some( producto => {
+    return producto.nombre === 'Celular';
+})
+
+console.log(existe);
+
+// nos devuelve "true" porque celular si existe dentro del array con objetos
