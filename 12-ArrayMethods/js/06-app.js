@@ -16,3 +16,10 @@ console.log(resultado);
 // estamos mirando si el precio de todos es menor a 1000
 // nos devuelve "true" porque el precio de todos los productos si es menor a 1000
 // cuando usas every todas las condiciones se tienen que cumplir
+
+
+const resultado2 = carrito.every( producto => producto.precio < 500);
+
+// aqui me devuelve "false" porque no todas las condiciones se cumplen
+// hay productos que estan por encima de 500
+// todas las condiciones no se estan cumpliendo
