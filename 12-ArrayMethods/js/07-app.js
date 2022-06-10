@@ -17,3 +17,9 @@ const resultado2 = meses.concat(meses3, meses2);
 
 console.log(resultado2);
 // me devuelve Array(7) [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio" ]
+
+// otra forma de concatenar usando el "spread operator"
+const resultado3 = [...meses, ...meses2];
+
+console.log(resultado3);
+// me devuelve Array(6) [ "Enero", "Febrero", "Marzo", "Abril", "Junio", "Julio" ]
