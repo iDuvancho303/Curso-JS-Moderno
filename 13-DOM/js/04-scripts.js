@@ -1,5 +1,5 @@
 // Usando .querySelector
-// puedes seleciionar classes pero tiene la misma carateristica que
+// puedes selecionar classes pero tiene la misma carateristica que
 // getelementbyid... solo te va a devolver el primero que encuentre solo uno
 
 const card = document.querySelector('.card') // usar punto para clase
@@ -17,7 +17,7 @@ const info = document.querySelector('.premium .info')
 console.log(info);
 
 
-// seleccionar el segundo elemento con clase "card" enla section "hospedaje'
+// seleccionar el segundo elemento con clase "card" en la section "hospedaje'
 const segundoCard = document.querySelector('.hospedaje .card:nth-child(2)');
 
 console.log(segundoCard);
@@ -32,4 +32,10 @@ console.log(formulario);
 //acuerdate que en queryselector solo te va a devolver el primero que encuentre
 // en orden de arriba a abajo
 
+
+// seleccionar con los elementos de HTML
+const navegacion = document.querySelector('nav')
+
+console.log(navegacion);
+// nos devuelve el primero elemento "nav" en el archivo html
 
