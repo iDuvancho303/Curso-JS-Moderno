@@ -24,3 +24,12 @@ console.log(segundoCard);
 // nos devuelve el segundo elemento que tiene una clase de 'Card'
 
 
+// como seleccionar un elemento que tiene un 'id' en .querySlector
+const formulario = document.querySelector('#formulario');
+
+console.log(formulario);
+// nos devuelve el primer elemento que tiene un 'id' de 'formulario
+//acuerdate que en queryselector solo te va a devolver el primero que encuentre
+// en orden de arriba a abajo
+
+
