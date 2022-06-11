@@ -13,3 +13,14 @@ console.log(card);
 // podemos tener selectores especificos como en CSS
 // igual de como se hace en CSS
 const info = document.querySelector('.premium .info')
+
+console.log(info);
+
+
+// seleccionar el segundo elemento con clase "card" enla section "hospedaje'
+const segundoCard = document.querySelector('.hospedaje .card:nth-child(2)');
+
+console.log(segundoCard);
+// nos devuelve el segundo elemento que tiene una clase de 'Card'
+
+
