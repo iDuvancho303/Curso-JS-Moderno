@@ -23,3 +23,13 @@ console.log(card.children[0]);
 
 //traversing de hijo a padre usando .parentElement
 console.log(card.parentElement.parentElement.parentElement)
+
+
+// traversing entre hermanos usando .nextElementSibling ... ir al siguiente
+console.log(card.nextElementSibling.nextElementSibling);
+// me lleva a el segundo elemento que tiene la clase card
+
+// traversing entre hermanos usando .previousElementSibling ... ir a el previo
+const ultimoCard = document.querySelector('.card:nth-child(4)');
+
+console.log(ultimoCard.previousElementSibling);
