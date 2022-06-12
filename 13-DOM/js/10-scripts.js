@@ -1,0 +1,1 @@
+// generar HTML con JS...desde el DOM
