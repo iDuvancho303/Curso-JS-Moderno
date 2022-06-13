@@ -19,3 +19,5 @@ console.log(enlace)
 const navegacion = document.querySelector('.navegacion');
 
 navegacion.appendChild // se usa ya para unir el texto dentro de .navegacion
+
+// que mas?
