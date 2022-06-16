@@ -17,10 +17,12 @@ enlace.onclick = miFuncion;
 
 console.log(enlace)
 
-// okay una vez cre todo, donde quiero mostrarlo ?
+// okay una vez cree todo, donde quiero mostrarlo ?
 const navegacion = document.querySelector('.navegacion');
 
-navegacion.appendChild(enlace); // se usa ya para unir el texto dentro de .navegacion
+navegacion.appendChild(enlace); 
+// se usa ya para unir el texto dentro de .navegacion
+// es como agregarle un hijo nuevo a navegacion
 
 // o sino lo puedes poner en un posicion en particular
 navegacion.insertBefore(enlace, navegacion.children[1]);
