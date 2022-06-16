@@ -26,11 +26,16 @@ navegacion.appendChild(enlace);
 
 // o sino lo puedes poner en un posicion en particular
 navegacion.insertBefore(enlace, navegacion.children[1]);
-// usando insertBefore lo pone dentor de dos elementos en donde tu lo especifiques
+// usando insertBefore lo pone dentro de dos elementos en donde tu lo especifiques
+// inserteBefore siempre requiere el segundo argumento y se le conoce como nodo de referencia
+
 
 function miFuncion() {
     alert('Diste Click')
 };
+
+
+
 
 
 // otro ejemplo
