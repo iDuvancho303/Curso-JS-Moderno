@@ -37,7 +37,6 @@ function miFuncion() {
 
 
 
-
 // otro ejemplo
 // crear un card
 const parrafo1 = document.createElement('p');
@@ -51,3 +50,31 @@ parrafo2.classList.add('titulo');
 const parrafo3 = document.createElement('p');
 parrafo3.textContent = '$800 por persona';
 parrafo3.classList.add('precio');
+
+// crear div con la clase de info para agregar los 3 parrafos
+const info5 = createElement('div');
+info5.classList.add('info');
+info5.appendChild(parrafo1);
+info5.appendChild(parrafo2);
+info5.appendChild(parrafo3);
+
+/* tenemos todo pero todavia hace falta añadir la imagen a la card */
+const imagen = document.createElement('img');
+imagen.src  = 'img/hacer2.jpg';
+imagen.alt = 'texto-alternativo';
+
+/* tenemos todavia que cread el div padre donde va la imagen y el otro div
+con los parrafos dentro*/
+const card = document.createElement('div');
+card.classList.add('card');
+
+/* añaadiendo todo dentro del div padre */
+// añadiendo la imagen
+card.appendChild(imagen);
+
+//añadiendo los parrafos
+card.appendChild(info5);
+
+// ahora si inserta en el HTML
+const contenedor = document.querySelector('.hacer .contenedor-cards');
+contenedor.appendChild(card);
