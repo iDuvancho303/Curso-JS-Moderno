@@ -22,3 +22,4 @@ console.log(resultado);
 
 // con filter nos crea un nuevo array con la condicion que estas pasando
 // nos devuelve los productos que estan por encima de 400 en este caso son monitor y celular
+  
