@@ -12,5 +12,13 @@ const listaCursos = document.querySelector('#lista-cursos')
 registrarEventos();
 
 function registrarEventos() {
-    listaCursos.addEventListener('click')
+    listaCursos.addEventListener('click', agregarCurso);
+} 
+
+
+// funciones
+function agregarCurso(e) {
+    if(e.target.contains('agregar-carrito')) {
+        console.log('ahaha lo hicisteeee');
+    }
 }
