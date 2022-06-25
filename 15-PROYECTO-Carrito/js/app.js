@@ -22,7 +22,7 @@ function agregarCurso(e) {
 
     e.preventDefault();
 
-    if(e.target.classlist.contains('agregar-carrito')) {
+    if(e.target.classlist.contains('agregar-carrito')  ) {
         const cursoSeleccionado = e.target.parentElement.parentElement;
         leerDatosCurso(cursoSeleccionado);
     }
@@ -46,3 +46,13 @@ const infoCurso = {
 
 
 // agrega elementos al arreglo del carrito
+articulosCarrito = [...articulosCarrito, infoCurso];
+
+console.log(articulosCarrito);
+
+
+// Muestra el carrito de compras en eh HTML
+
+function carritoHTML() {
+     articulosCarrito
+}
