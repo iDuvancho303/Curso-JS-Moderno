@@ -19,5 +19,27 @@ function registrarEventos() {
 
 // funciones
 function agregarCurso(e) {
-    console.log('presionando en cursos');
+
+    e.preventDefault();
+
+    if(e.target.classlist.contains('agregar-carrito')) {
+        const cursoSeleccionado = e.target.parentElement.parentElement;
+        leerDatosCurso(cursoSeleccionado);
+    }
+}
+
+
+// lee el contenido del html al que le dimos click y extra la informacion del curso
+
+function leerDatosCurso(curso) {
+   //  console.log(curso)
+} 
+
+// Crear un objeto con el contenido del curso actual
+const infoCurso = {
+    imagen: curso.querySelector('img').src,
+    titulo: curso.querySelector('h4').textContent,
+    precio: curso.querySelector('.precio span').textContent,
+    id: curso.querySelector('a').getAttribute('data-id'),
+    cantidad: 1
 }
