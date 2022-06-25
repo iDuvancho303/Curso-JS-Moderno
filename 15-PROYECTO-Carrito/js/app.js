@@ -48,11 +48,18 @@ const infoCurso = {
 // agrega elementos al arreglo del carrito
 articulosCarrito = [...articulosCarrito, infoCurso];
 
-console.log(articulosCarrito);
 
 
 // Muestra el carrito de compras en eh HTML
 
 function carritoHTML() {
-     articulosCarrito
+
+    articulosCarrito.forEach( curso => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+        <td>
+            ${curso.titulo}
+        </td>
+        `;
+    })
 }
