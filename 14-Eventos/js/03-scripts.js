@@ -1,5 +1,5 @@
 // Eventos sobre los inputs
-const busqueda = document.querySelector('.busqueda');
+/*const busqueda = document.querySelector('.busqueda');
 
 // Añadiendo el evento
 busqueda.addEventListener('keydown', () => {
@@ -16,3 +16,4 @@ input =
 
 
 */
+
