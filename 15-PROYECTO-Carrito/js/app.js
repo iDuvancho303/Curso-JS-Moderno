@@ -6,9 +6,10 @@ const listaCursos = document.querySelector('#lista-cursos');
 // Para selecionar la lista de cursos disponibles dentro del HTML
 const contenedorCarrito = document.querySelector('#lista-carrito tbody'); 
 // Donde van a ir los cursos una vez agregados al carrito
-const vaciarCarritoBtn = document.querySelector('vaciar-carrito')
+const vaciarCarritoBtn = document.querySelector('vaciar-carrito');
 // Seleccionamos este boton para vaciar los cursos del carrito
-
+let articulosCarrito = [];
+// vamos a crear un array para anadir los cursos al carrito
 
 // Creando una funcion para registrar todos mis "event listeners"
 // Como por ejemplo cuando empiezar a dar en los botones para empezar a 
@@ -41,7 +42,12 @@ function leerDatosCurso(curso) {
         imagen: document.querySelector('img').src,
         titulo: document.querySelector('h4').textContent,
         precio: document.querySelector('p span').textContent,
+<<<<<<< HEAD
         
+=======
+        id: curso.querySelector('a').getAttribute('data-id'),
+        cantidad: 1
+>>>>>>> bc0041eaaa725450560efe5df43fe6af690b5323
     }
 
     console.log(infoCurso);
