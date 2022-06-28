@@ -26,6 +26,12 @@ function registrarEventListeners() {
 function agregarCurso(e) {
     e.preventDefault(); // estudiar esto, para que no se mueva la pagina
     if(e.target.classList.contains('agregar-carrito')) {
-        console.log('Le diste al boton de agregar carrrito');
+        console.log(e.target.parentElement.parentElement);
     }
+}
+
+// Lee el contenido del HTML al que le dimos click y extrae la informacion del curso
+// Ir hacia el padre para saber cual es el nombre del curso
+function leerDatosCurso() {
+
 }
