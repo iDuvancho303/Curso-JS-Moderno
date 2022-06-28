@@ -15,5 +15,6 @@ const vaciarCarritoBtn = document.querySelector('vaciar-carrito')
 // agregar cursos al carrito
 
 function registrarEventListeners() {
-
+    // Cuando agregar un curso presionando en el boton
+    listaCursos.addEventListener('click', agregarCurso);
 }
