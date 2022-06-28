@@ -23,6 +23,8 @@ function registrarEventListeners() {
 
 // Funciones para añadir cursos
 
-function agregarCurso() {
-    console.log('presionando en cursos');
+function agregarCurso(e) {
+    if(e.target.classList.contains) {
+
+    }
 }
