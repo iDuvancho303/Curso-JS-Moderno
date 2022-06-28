@@ -34,11 +34,13 @@ function agregarCurso(e) {
 // Lee el contenido del HTML al que le dimos click y extrae la informacion del curso
 // Ir hacia el padre para saber cual es el nombre del curso
 function leerDatosCurso(curso) {
-    console.log(curso);
+    //console.log(curso);
 
     // Crear un objeto con el contenido del curso actual
     const infoCurso = {
-        imagen: document.querySelector('img').src
+        imagen: document.querySelector('img').src,
+        titulo: document.querySelector('h4').textContent,
+        precio: document.querySelector('p span').textContent,
     }
 
     console.log(infoCurso);
