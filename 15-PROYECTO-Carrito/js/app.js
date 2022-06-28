@@ -42,12 +42,7 @@ function leerDatosCurso(curso) {
         imagen: document.querySelector('img').src,
         titulo: document.querySelector('h4').textContent,
         precio: document.querySelector('p span').textContent,
-<<<<<<< HEAD
         
-=======
-        id: curso.querySelector('a').getAttribute('data-id'),
-        cantidad: 1
->>>>>>> bc0041eaaa725450560efe5df43fe6af690b5323
     }
 
 }
