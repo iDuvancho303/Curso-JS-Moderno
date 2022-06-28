@@ -53,4 +53,6 @@ function leerDatosCurso(curso) {
 }
 
 // Agrega elementos al arreglo de carrito
-articulosCarrito = [...articulosCarrito]
+articulosCarrito = [...articulosCarrito, infoCurso];
+
+console.log(infoCurso);
