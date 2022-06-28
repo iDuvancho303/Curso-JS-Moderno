@@ -24,7 +24,8 @@ function registrarEventListeners() {
 // Funciones para añadir cursos
 
 function agregarCurso(e) {
-    if(e.target.classList.contains) {
-
+    e.preventDefault(); // estudiar esto, para que no se mueva la pagina
+    if(e.target.classList.contains('agregar-carrito')) {
+        console.log('Le diste al boton de agregar carrrito');
     }
 }
