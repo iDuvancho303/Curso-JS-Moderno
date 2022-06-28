@@ -50,5 +50,7 @@ function leerDatosCurso(curso) {
 >>>>>>> bc0041eaaa725450560efe5df43fe6af690b5323
     }
 
-    console.log(infoCurso);
 }
+
+// Agrega elementos al arreglo de carrito
+articulosCarrito = [...articulosCarrito]
