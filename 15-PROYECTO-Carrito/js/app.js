@@ -9,3 +9,11 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('vaciar-carrito')
 // Seleccionamos este boton para vaciar los cursos del carrito
 
+
+// Creando una funcion para registrar todos mis "event listeners"
+// Como por ejemplo cuando empiezar a dar en los botones para empezar a 
+// agregar cursos al carrito
+
+function registrarEventListeners() {
+
+}
