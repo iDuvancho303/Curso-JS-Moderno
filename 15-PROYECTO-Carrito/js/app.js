@@ -41,6 +41,7 @@ function leerDatosCurso(curso) {
         imagen: document.querySelector('img').src,
         titulo: document.querySelector('h4').textContent,
         precio: document.querySelector('p span').textContent,
+        
     }
 
     console.log(infoCurso);
