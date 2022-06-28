@@ -26,12 +26,20 @@ function registrarEventListeners() {
 function agregarCurso(e) {
     e.preventDefault(); // estudiar esto, para que no se mueva la pagina
     if(e.target.classList.contains('agregar-carrito')) {
-        console.log(e.target.parentElement.parentElement);
+        const cursoSeleccionado = e.target.parentElement.parentElement;
+        leerDatosCurso(cursoSeleccionado);
     }
 }
 
 // Lee el contenido del HTML al que le dimos click y extrae la informacion del curso
 // Ir hacia el padre para saber cual es el nombre del curso
-function leerDatosCurso() {
+function leerDatosCurso(curso) {
+    console.log(curso);
 
+    // Crear un objeto con el contenido del curso actual
+    const infoCurso = {
+        imagen: document.querySelector('img').src
+    }
+
+    console.log(infoCurso);
 }
