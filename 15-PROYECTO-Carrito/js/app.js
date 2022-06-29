@@ -39,9 +39,9 @@ function leerDatosCurso(curso) {
 
     // Crear un objeto con el contenido del curso actual
     const infoCurso = {
-        imagen: document.querySelector('img').src,
-        titulo: document.querySelector('h4').textContent,
-        precio: document.querySelector('p span').textContent,
+        imagen: curso.document.querySelector('img').src,
+        titulo: curso.document.querySelector('h4').textContent,
+        precio: curso.document.querySelector('p span').textContent,
         id: curso.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
