@@ -42,7 +42,8 @@ function leerDatosCurso(curso) {
         imagen: document.querySelector('img').src,
         titulo: document.querySelector('h4').textContent,
         precio: document.querySelector('p span').textContent,
-        
+        id: curso.querySelector('a').getAttribute('data-id'),
+        cantidad: 1
     }
 
 }
@@ -50,4 +51,4 @@ function leerDatosCurso(curso) {
 // Agrega elementos al arreglo de carrito
 articulosCarrito = [...articulosCarrito, infoCurso];
 
-console.log(infoCurso);
+console.log(articulosCarrito);
