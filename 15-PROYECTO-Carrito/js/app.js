@@ -41,14 +41,16 @@ function leerDatosCurso(curso) {
     const infoCurso = {
         imagen: curso.document.querySelector('img').src,
         titulo: curso.document.querySelector('h4').textContent,
-        precio: curso.document.querySelector('p span').textContent,
+        precio: curso.document.querySelector('precio span').textContent,
         id: curso.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
 
-}
 
-// Agrega elementos al arreglo de carrito
+    // Agrega elementos al arreglo de carrito
 articulosCarrito = [...articulosCarrito, infoCurso];
 
 console.log(articulosCarrito);
+
+}
+
