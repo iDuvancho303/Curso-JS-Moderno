@@ -6,7 +6,7 @@ const listaCursos = document.querySelector('#lista-cursos');
 // Para selecionar la lista de cursos disponibles dentro del HTML
 const contenedorCarrito = document.querySelector('#lista-carrito tbody'); 
 // Donde van a ir los cursos una vez agregados al carrito
-const vaciarCarritoBtn = document.querySelector('vaciar-carrito');
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 // Seleccionamos este boton para vaciar los cursos del carrito
 let articulosCarrito = [];
 // vamos a crear un array para anadir los cursos al carrito
@@ -18,7 +18,7 @@ let articulosCarrito = [];
 registrarEventListeners();
 
 function registrarEventListeners() {
-    // Cuando agregar un curso presionando en el boton "agregar al carrito"
+    // Cuando agregas un curso presionando en el boton "agregar al carrito"
     listaCursos.addEventListener('click', agregarCurso);
 }
 
