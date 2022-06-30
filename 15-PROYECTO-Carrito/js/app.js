@@ -25,6 +25,7 @@ function registrarEventListeners() {
 // Funciones para añadir cursos
 
 function agregarCurso(e) {
+    
     e.preventDefault(); // estudiar esto, para que no se mueva la pagina
     if(e.target.classList.contains('agregar-carrito')) {
         const cursoSeleccionado = e.target.parentElement.parentElement;
@@ -39,9 +40,9 @@ function leerDatosCurso(curso) {
 
     // Crear un objeto con el contenido del curso actual
     const infoCurso = {
-        imagen: curso.document.querySelector('img').src,
-        titulo: curso.document.querySelector('h4').textContent,
-        precio: curso.document.querySelector('precio span').textContent,
+        imagen: curso.querySelector('img').src,
+        titulo: curso.querySelector('h4').textContent,
+        precio: curso.querySelector('.precio span').textContent,
         id: curso.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
