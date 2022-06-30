@@ -60,6 +60,11 @@ carritoHTML();
 // Muestra el carrito de compras en el HTML
 
 function carritoHTML() {
+
+    // Limpiar el HTML
+    limpiarHTML();
+
+    // Recorre el carrito y genera el HTML
     articulosCarrito.forEach( curso => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -70,4 +75,10 @@ function carritoHTML() {
         // Agrega el HTML del carrito en el tbody
         contenedorCarrito.appendChild(row);
     })
+}
+
+// Elimina los cursos del tbody
+
+function limpiarHTML() {
+    contenedorCarrito.innerHTML = '';
 }
