@@ -55,3 +55,10 @@ console.log(articulosCarrito);
 
 }
 
+// Muestra el carrito de compras en el HTML
+
+function carritoHTML() {
+    articulosCarrito.forEach( curso => {
+        
+    })
+}
