@@ -47,6 +47,13 @@ function leerDatosCurso(curso) {
         cantidad: 1
     }
 
+    // Revisa si un elemento ya existe en el carrito
+    const existe = articulosCarrito.some(curso => curso.id === infoCurso.id);
+    if(existe) {
+        // Actualizamos la cantidad
+        
+    }
+
 
     // Agrega elementos al arreglo de carrito
 articulosCarrito = [...articulosCarrito, infoCurso];
