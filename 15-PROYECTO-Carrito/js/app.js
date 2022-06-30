@@ -54,9 +54,12 @@ function leerDatosCurso(curso) {
         const cursos = articulosCarrito.map(curso => {
             if(curso.id === infoCurso.id) {
                 curso.cantidad++;
-                return curso;
+                return curso; // retorns el objeto actulizado...si hay mada de un curso los une
+            } else {
+                return curso; // retorna los objetos que no estan duplicados
             }
-        })
+        });
+        articulosCarrito = {...cursos};
     } else {
         // Agregamos el curso al carrito
         articulosCarrito = [...articulosCarrito, infoCurso];
