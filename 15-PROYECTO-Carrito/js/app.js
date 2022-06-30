@@ -79,6 +79,10 @@ function carritoHTML() {
         <td>
             <h4>${curso.precio}</h4>
         </td>
+
+        <td>
+            <h4>${curso.cantidad}</h4>
+        </td>
         `;
         // Agrega el HTML del carrito en el tbody
         contenedorCarrito.appendChild(row);
