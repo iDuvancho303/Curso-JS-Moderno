@@ -53,12 +53,21 @@ articulosCarrito = [...articulosCarrito, infoCurso];
 
 console.log(articulosCarrito);
 
+carritoHTML();
+
 }
 
 // Muestra el carrito de compras en el HTML
 
 function carritoHTML() {
     articulosCarrito.forEach( curso => {
-        
+        const row = document.createElement('tr');
+        row.innerHTML = `
+        <td>
+            ${curso.titulo}
+        </td>
+        `;
+        // Agrega el HTML del carrito en el tbody
+        contenedorCarrito.appendChild(row);
     })
 }
