@@ -20,6 +20,9 @@ registrarEventListeners();
 function registrarEventListeners() {
     // Cuando agregas un curso presionando en el boton "agregar al carrito"
     listaCursos.addEventListener('click', agregarCurso);
+
+    // Elimina cursos del carrito
+    carrito.addEventListener('click', eliminarCurso);
 }
 
 // Funciones para añadir cursos
@@ -31,6 +34,12 @@ function agregarCurso(e) {
         const cursoSeleccionado = e.target.parentElement.parentElement;
         leerDatosCurso(cursoSeleccionado);
     }
+}
+
+// Elimina un curso del carrito
+
+function eliminarCurso() {
+    console.log('Eliminando curso');
 }
 
 // Lee el contenido del HTML al que le dimos click y extrae la informacion del curso
