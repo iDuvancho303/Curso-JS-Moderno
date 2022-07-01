@@ -32,6 +32,11 @@ function validarFormulario(e) {
 
         mostrarError();
     }
+
+    if(e.target.type === 'email') {
+        const resultado = e.target.value.indexOf('@');
+        console.log(resultado);
+    }
 }
 
 function mostrarError() {
