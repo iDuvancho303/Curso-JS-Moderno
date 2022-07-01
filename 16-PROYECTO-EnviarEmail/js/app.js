@@ -26,11 +26,11 @@ function iniciarApp() {
 // Valida el formulario
 function validarFormulario(e) {
     if(e.target.value.length > 0) {
-       // console.log('si hay algo...');
+        e.target.classList.add('border', 'border-green-500');
     } else {
         e.target.classList.add('border', 'border-red-500');
 
-        mostrarError('Todos los campos estan vacios');
+        mostrarError('Todos los campos son obligatorios');
     }
 
     if(e.target.type === 'email') {
@@ -39,7 +39,10 @@ function validarFormulario(e) {
         if(er.test(e.target.value)) {
             console.log('Email es valido');
         } else {
-            console.log('Email no es nada valido');
+            e.target.classList.add('border', 'border-red-500');
+
+            mostrarError('Email no es valido');
+            
         }
     }
 }
