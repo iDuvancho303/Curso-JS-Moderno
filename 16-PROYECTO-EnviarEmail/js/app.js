@@ -12,6 +12,8 @@ function eventListeners() {
 
     // Campos del formulario
     email.addEventListener('blur', validarFormulario);
+    asunto.addEventListener('blur', validarFormulario);
+    mensaje.addEventListener('blur', validarFormulario);
 }
 
 // Funciones
@@ -25,6 +27,13 @@ function validarFormulario(e) {
     if(e.target.value.length > 3) {
         console.log('si hay algo...');
     } else {
-        console.log('No hay nada mijo');
+        e.target.classList.add('border', 'border-red-500');
+
+        mostrarError();
     }
+}
+
+function mostrarError() {
+    const mensajeError = document.createElement('p');
+    mensajeError.textContent = 'Todos los campos son obligatorios';
 }
