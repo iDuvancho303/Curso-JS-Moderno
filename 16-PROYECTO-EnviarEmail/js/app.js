@@ -19,3 +19,12 @@ function iniciarApp() {
     btnEnviar.disabled = true;
     btnEnviar.classList.add('cursor-not-allowed', 'opacity-50');
 }
+
+// Valida el formulario
+function validarFormulario(e) {
+    if(e.target.value.length > 3) {
+        console.log('si hay algo...');
+    } else {
+        console.log('No hay nada mijo');
+    }
+}
