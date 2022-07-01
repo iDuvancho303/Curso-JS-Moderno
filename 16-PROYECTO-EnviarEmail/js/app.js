@@ -25,8 +25,8 @@ function iniciarApp() {
 
 // Valida el formulario
 function validarFormulario(e) {
-    if(e.target.value.length > 3) {
-        console.log('si hay algo...');
+    if(e.target.value.length > 0) {
+       // console.log('si hay algo...');
     } else {
         e.target.classList.add('border', 'border-red-500');
 
@@ -34,9 +34,12 @@ function validarFormulario(e) {
     }
 
     if(e.target.type === 'email') {
-        const resultado = e.target.value.indexOf('@');
-        if(resultado < 0 ) {
-            mostrarError();
+        const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        
+        if(er.test(e.target.value)) {
+            console.log('Email es valido');
+        } else {
+            console.log('Email no es nada valido');
         }
     }
 }
