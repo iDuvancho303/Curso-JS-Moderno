@@ -1,5 +1,7 @@
 // Variables
 
+const btnEnviar = document.querySelector('#enviar')
+
 eventListeners();
 
 function eventListeners() {
@@ -12,5 +14,5 @@ function eventListeners() {
 // Funciones
 
 function iniciarapp() {
-    
+    console.log('Iniciandso, texteando y reggaetoneando');
 }
