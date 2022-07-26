@@ -13,6 +13,8 @@ function eventListeners() {
 
     // Campos del formulario
     email.addEventListener('blur', validarFormulario);
+    asunto.addEventListener('blur', validarFormulario);
+    mensaje.addEventListener('blur', validarFormulario)
 }
 
 
@@ -26,7 +28,9 @@ function iniciarApp() {
 
 // Funciones -> validando el formulario
 function validarFormulario(e) {
-    if(e.target.value.length < 10) {
-        console.log("meeeeh")
-    };
+    if(e.target.value.length > 5) {
+        console.log("Si hay algo")
+    } else {
+        e.target.classList.add('border', 'border-red-500');
+    }
 }
