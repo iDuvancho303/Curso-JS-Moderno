@@ -25,6 +25,8 @@ function iniciarApp() {
 }
 
 // Funciones -> validando el formulario
-function validarFormulario() {
-    console.log('valiando formulario');
-}1
+function validarFormulario(e) {
+    if(e.target.value.length < 10) {
+        console.log("meeeeh")
+    };
+}
