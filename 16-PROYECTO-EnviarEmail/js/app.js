@@ -98,7 +98,7 @@ function mostrarError(mensaje) {
     }
 }
 
-
+// Envia el email
 function enviarEmail() {
     
 }
