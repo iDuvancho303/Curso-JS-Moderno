@@ -104,5 +104,6 @@ function enviarEmail(e) {
     
 
     // Mostrar el spinner
-    const spinner = document.querySelector('#spinner')
+    const spinner = document.querySelector('#spinner');
+    spinner.style.display = 'flex';
 }
