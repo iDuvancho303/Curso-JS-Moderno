@@ -20,7 +20,11 @@ function eventListeners() {
 
 // Funciones
 function iniciarApp() {
-    btnEnviar.disabled = true; 
+    btnEnviar.disabled = true;
+    btnEnviar.classList.add('cursor-not-allowed', 'opacity-50'); 
 }
 
 // Funciones -> validando el formulario
+function validarFormulario() {
+    console.log('valiando formulario');
+}1
