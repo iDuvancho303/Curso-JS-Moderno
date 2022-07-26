@@ -99,6 +99,7 @@ function mostrarError(mensaje) {
 }
 
 // Envia el email
-function enviarEmail() {
-    
+function enviarEmail(e) {
+    e.preventDefault();
+    console.log('Enviando email haha');
 }
