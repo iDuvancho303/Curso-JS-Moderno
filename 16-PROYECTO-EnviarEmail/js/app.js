@@ -21,6 +21,10 @@ function eventListeners() {
     email.addEventListener('blur', validarFormulario);
     asunto.addEventListener('blur', validarFormulario);
     mensaje.addEventListener('blur', validarFormulario)
+
+    // enviar elamil usando el spinner
+    formulario.addEventListener('submit', enviarEmail);
+
 }
 
 
@@ -92,4 +96,9 @@ function mostrarError(mensaje) {
     if(errores.length === 0) {
         formulario.appendChild(mensajeError);
     }
+}
+
+
+function enviarEmail() {
+    
 }
