@@ -8,7 +8,11 @@ const mensaje = document.querySelector('#mensaje');
 eventListeners();
 
 function eventListeners() {
+    // Cuando la app arranca
     document.addEventListener('DOMContentLoaded', iniciarApp);
+
+    // Campos del formulario
+    email.addEventListener('blur', validarFormulario);
 }
 
 
@@ -18,3 +22,5 @@ function eventListeners() {
 function iniciarApp() {
     btnEnviar.disabled = true; 
 }
+
+// Funciones -> validando el formulario
