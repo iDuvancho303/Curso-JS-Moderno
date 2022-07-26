@@ -101,5 +101,8 @@ function mostrarError(mensaje) {
 // Envia el email
 function enviarEmail(e) {
     e.preventDefault();
-    console.log('Enviando email haha');
+    
+
+    // Mostrar el spinner
+    const spinner = document.querySelector('#spinner')
 }
