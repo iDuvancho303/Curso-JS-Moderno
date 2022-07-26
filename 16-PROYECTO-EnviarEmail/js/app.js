@@ -76,6 +76,9 @@ function validarFormulario(e) {
     if(er.test(email.value) !== '' && asunto.value !== '' && mensaje.value !== '') {
         btnEnviar.disabled = false;
         btnEnviar.classList.remove('cursor-not-allowed', 'opacity-50'); 
+    } else {
+        btnEnviar.disabled = true;
+        btnEnviar.classList.add('cursor-not-allowed', 'opacity-50')
     }
 }
 
