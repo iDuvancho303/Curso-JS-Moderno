@@ -40,7 +40,7 @@ function validarFormulario(e) {
     if(e.target.type === 'email') {
         const resultado = e.target.value.indexOf('@');
         if(resultado < 0) {
-            mostrarError();
+            mostrarError('El email no es valido');
         }
     }
 }
