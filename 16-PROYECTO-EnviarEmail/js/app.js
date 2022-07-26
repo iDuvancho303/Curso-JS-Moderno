@@ -69,7 +69,8 @@ function validarFormulario(e) {
 
     // hacer que el boton sea visible despues de pasar las 3 validaciones
     if(email.value !== '' && asunto.value !== '' && mensaje.value !== '') {
-        
+        btnEnviar.enabled = true;
+        btnEnviar.classList.remove('cursor-not-allowed', 'opacity-50'); 
     }
 }
 
