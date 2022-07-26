@@ -59,7 +59,7 @@ function validarFormulario(e) {
             e.target.classList.remove('border-green-500')
             e.target.classList.add('border', 'border-red-500');
 
-            mostrarError('Email no es correcto');
+            mostrarError('Email no es valido');
         }
     }
 }
