@@ -114,8 +114,14 @@ function enviarEmail(e) {
         // Mensaje que dice que se envio el email correctamente
         const parrafo = document.createElement('p');
         parrafo.textContent = 'El mensaje fue enviado';
+        parrafo.classList.add('text-center', 'my-10', 'p-2', 'bg-green-500', 'text-white');
+        parrafo.style.textTransform = 'uppercase';
 
         // Insertar el parrafo antes del spinner
         formulario.insertBefore(parrafo, spinner);
+
+        setTimeout(() => {
+            parrafo.remove();
+        }, 5000);
     }, 3000);
 }
