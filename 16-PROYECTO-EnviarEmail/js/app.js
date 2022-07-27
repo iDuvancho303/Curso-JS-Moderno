@@ -106,4 +106,16 @@ function enviarEmail(e) {
     // Mostrar el spinner
     const spinner = document.querySelector('#spinner');
     spinner.style.display = 'flex';
+
+    // Despues de 3 segundos, ocultar el spinner y mostrar el mensaje
+    setTimeout(() =>{
+        spinner.style.display = 'none';
+
+        // Mensaje que dice que se envio el email correctamente
+        const parrafo = document.createElement('p');
+        parrafo.textContent = 'El mensaje fue enviado';
+
+        // Insertar el parrafo antes del spinner
+        formulario.insertBefore(parrafo, spinner);
+    }, 3000);
 }
