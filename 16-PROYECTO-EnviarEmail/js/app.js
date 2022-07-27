@@ -121,7 +121,7 @@ function enviarEmail(e) {
         formulario.insertBefore(parrafo, spinner);
 
         setTimeout(() => {
-            parrafo.remove();
+            parrafo.remove(); // eliminar el mensaje despues de 5 segundos
         }, 5000);
     }, 3000);
 }
