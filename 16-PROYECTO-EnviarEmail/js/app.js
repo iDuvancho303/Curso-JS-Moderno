@@ -1,5 +1,6 @@
 // variables
 const btnEnviar = document.querySelector('#enviar');
+const formulario = document.querySelector('#enviar-mail');
 
 // Variables para campos
 const email = document.querySelector('#email');
@@ -28,5 +29,13 @@ function validarFormulario(e) {
         console.log('Si Hay Algo Hombre');
     } else {
         e.target.classList.add('broder', 'border-red-500');
+        mostrarError();
     }
+}
+
+function mostrarError() {
+    const mensajeError = document.createElement('p');
+    mensajeError.textContent = 'Todos los campos son obligatorios';
+    mensajeError.classList.add('border', 'border-red-500', 'background-color-100', 'text-red-500', 'p-3');
+    formulario.appendChild(mensajeError);
 }
