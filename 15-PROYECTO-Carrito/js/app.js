@@ -17,7 +17,11 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito ')
 cargarEventListeners();
 
 function cargarEventListeners() {
-    
+    listaCursos.addEventListener('click', agregarCurso); 
 }
 
+
+// Funciones 
+
+// 5.1
  
