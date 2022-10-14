@@ -14,7 +14,10 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito ')
 
 // 5. Cargando los "event listeners" para que cuando se añada un curso o se 
 // borre un curso del carrito - el esta usando una function para crear varios listeners
+cargarEventListeners();
 
-
+function cargarEventListeners() {
+    
+}
 
  
