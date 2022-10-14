@@ -10,6 +10,11 @@ const listaCursos = document.querySelector('#lista-cursos');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 
 // 4. anadiendo / selecionando el btn para vaciar el carrito
-const vaciarCarritoBtn = document.querySelector('#vaciar-carrito')
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito ')
+
+// 5. Cargando los "event listeners" para que cuando se añada un curso o se 
+// borre un curso del carrito - el esta usando una function para crear varios listeners
+
+
 
  
