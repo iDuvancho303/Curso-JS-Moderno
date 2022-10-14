@@ -23,5 +23,9 @@ function cargarEventListeners() {
 
 // Funciones 
 
-// 5.1
+// 5.1 creando la funcion de "agregarCurso"
+function agregarCurso() {
+    console.log('presionando en cursos');
+}
+
  
