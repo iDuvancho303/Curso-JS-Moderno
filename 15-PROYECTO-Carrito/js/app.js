@@ -24,8 +24,11 @@ function cargarEventListeners() {
 // Funciones 
 
 // 5.1 creando la funcion de "agregarCurso"
-function agregarCurso() {
-    console.log('presionando en cursos');
+function agregarCurso(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('agregar-carrito')) {
+        console.log('Si esta funcionando');
+    }
 }
 
  
