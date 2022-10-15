@@ -31,4 +31,5 @@ function agregarCurso(e) {
     }
 }
 
+ // 6. lee el contenido del html al que le dimos click and extrae la informacion del curso
  
