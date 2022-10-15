@@ -49,6 +49,14 @@ function agregarCurso(e) {
     }
 
     // 7. como agregar los elementos "objeto" al carrito de compras.
+    articulosCarrito = [...articulosCarrito, infoCurso];
+
+    console.log(articulosCarrito);
+
+    // muestra el carrito de compras 'objeto" en el html
+    function carritoHTML() {
+        articulosCarrito.forEach()
+    }
  }
 
  
