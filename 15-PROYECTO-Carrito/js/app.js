@@ -26,12 +26,23 @@ function cargarEventListeners() {
 // 5.1 creando la funcion de "agregarCurso"
 function agregarCurso(e) {
     e.preventDefault();
+    
     if (e.target.classList.contains('agregar-carrito')) {
-        console.log('Si esta funcionando');
+        const cursoSeleccionado = e.target.parentElement.parentElement;
+        leerDatosCurso(cursoSeleccionado);
     }
 }
 
  // 6. lee el contenido del html al que le dimos click and extrae la informacion del curso
- function leerDatosCurso() {
-    
+ function leerDatosCurso(curso) {
+    /*console.log(curso); */
+
+    const infoCurso =  {
+        imagen: curso.querySelector('img').src,
+        titulo:  curso.querySelector('h4').textContent, 
+        precio: curso.querySelector('.precio span').textContent,
+
+    }
+
+    console.log(infoCurso);
  }
