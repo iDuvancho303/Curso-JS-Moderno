@@ -53,10 +53,14 @@ function agregarCurso(e) {
 
     console.log(articulosCarrito);
 
+}
+
     // muestra el carrito de compras 'objeto" en el html
     function carritoHTML() {
-        articulosCarrito.forEach()
+        articulosCarrito.forEach( curso => {
+            const row = document.createElement('tr');
+        })
     }
- }
+ 
 
  
