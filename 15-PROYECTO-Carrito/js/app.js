@@ -10,7 +10,9 @@ const listaCursos = document.querySelector('#lista-cursos');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 
 // 4. anadiendo / selecionando el btn para vaciar el carrito
-const vaciarCarritoBtn = document.querySelector('#vaciar-carrito ')
+const vaciarCarritoBtn = document.querySelector('#vaciar-carrito ');
+
+let articulosCarrito = []; 
 
 // 5. Cargando los "event listeners" para que cuando se añada un curso o se 
 // borre un curso del carrito - el esta usando una function para crear varios listeners
@@ -41,8 +43,12 @@ function agregarCurso(e) {
         imagen: curso.querySelector('img').src,
         titulo:  curso.querySelector('h4').textContent, 
         precio: curso.querySelector('.precio span').textContent,
+        id: curso.querySelector('a').getAttribute('data-id'),
+        cantidad: 1
 
     }
 
-    console.log(infoCurso);
+    // 7. como agregar los elementos "objeto" al carrito de compras.
  }
+
+ 
