@@ -82,7 +82,10 @@ function agregarCurso(e) {
 
     // Elmina los curos del tbody
    function limpiarHTML() {
-    contenedorCarrito.innerHTML = '';
+    
+    while (contenedorCarrito.firstChild) {
+        contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+    }
    } 
  
 
