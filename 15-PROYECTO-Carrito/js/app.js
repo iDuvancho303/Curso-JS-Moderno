@@ -67,8 +67,17 @@ function agregarCurso(e) {
         articulosCarrito.forEach( curso => {
             const row = document.createElement('tr');
             row.innerHTML = `
+                
+                <td>
+                    <img src="${curso.imagen} width="100">
+                </td>
+
                 <td>
                     ${curso.titulo}
+                </td>
+
+                <td>
+                    ${curso.precio}
                 </td>
             
             
@@ -76,7 +85,7 @@ function agregarCurso(e) {
 
             // Agrega el HTML del carrito en tbody
             contenedorCarrito.appendChild(row);
-        })
+        });
     }
 
 
