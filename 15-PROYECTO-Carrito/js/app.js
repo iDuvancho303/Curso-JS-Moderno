@@ -69,7 +69,7 @@ function agregarCurso(e) {
             row.innerHTML = `
                 
                 <td>
-                    <img src="${curso.imagen} width="100">
+                    <img src="${curso.imagen}" width="100">
                 </td>
 
                 <td>
@@ -82,6 +82,10 @@ function agregarCurso(e) {
 
                 <td>
                     ${curso.cantidad}
+                </td>
+
+                <td>
+                    <a href="#" class="borrar-curso" data-id=${curso.id}> X </a>
                 </td>
             
             
