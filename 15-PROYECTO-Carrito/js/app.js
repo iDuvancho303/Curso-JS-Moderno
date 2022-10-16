@@ -58,6 +58,11 @@ function agregarCurso(e) {
 
     // muestra el carrito de compras 'objeto" en el html
     function carritoHTML() {
+
+        // Limpiar el HTML
+
+
+        // Recorre el carrito y genera el HTML
         articulosCarrito.forEach( curso => {
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -66,9 +71,18 @@ function agregarCurso(e) {
                 </td>
             
             
-            `
+            `;
+
+            // Agrega el HTML del carrito en tbody
+            contenedorCarrito.appendChild(row);
         })
     }
+
+
+    // Elmina los curos del tbody
+   function limpiarHTML() {
+    
+   } 
  
 
  
