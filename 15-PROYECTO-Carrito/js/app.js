@@ -51,7 +51,12 @@ function agregarCurso(e) {
     // Revisa si un elemento ya esta en el carrito
     const existe = articulosCarrito.some(curso => curso.id === infoCurso.id);
     if (existe) {
-
+        const cursos = articulosCarrito.map(curso => {
+            if (curso.id  === infoCurso.id) {
+                curso.cantidad++;
+                return curso;
+            }
+        })
     } else {
         // 7. como agregar los elementos "objeto" al carrito de compras.
         articulosCarrito = [...articulosCarrito, infoCurso];
