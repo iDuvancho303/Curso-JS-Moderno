@@ -65,23 +65,24 @@ function agregarCurso(e) {
 
         // Recorre el carrito y genera el HTML
         articulosCarrito.forEach( curso => {
+            const {imagen, titulo, precio, cantidad}
             const row = document.createElement('tr');
             row.innerHTML = `
                 
                 <td>
-                    <img src="${curso.imagen}" width="100">
+                    <img src="${imagen}" width="100">
                 </td>
 
                 <td>
-                    ${curso.titulo}
+                    ${titulo}
                 </td>
 
                 <td>
-                    ${curso.precio}
+                    ${precio}
                 </td>
 
                 <td>
-                    ${curso.cantidad}
+                    ${cantidad}
                 </td>
 
                 <td>
