@@ -79,6 +79,10 @@ function agregarCurso(e) {
                 <td>
                     ${curso.precio}
                 </td>
+
+                <td>
+                    ${curso.cantidad}
+                </td>
             
             
             `;
