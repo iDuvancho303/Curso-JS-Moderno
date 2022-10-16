@@ -55,8 +55,11 @@ function agregarCurso(e) {
             if (curso.id  === infoCurso.id) {
                 curso.cantidad++;
                 return curso;
+            } else {
+                return curso;
             }
-        })
+        });
+        articulosCarrito = [...cursos];
     } else {
         // 7. como agregar los elementos "objeto" al carrito de compras.
         articulosCarrito = [...articulosCarrito, infoCurso];
