@@ -45,8 +45,14 @@ function agregarCurso(e) {
         precio: curso.querySelector('.precio span').textContent,
         id: curso.querySelector('a').getAttribute('data-id'),
         cantidad: 1
-
     }
+
+
+    // Revisa si un elemento ya esta en el carrito
+    const existe = articulosCarrito.some(curso => curso.id === infoCurso.id)
+
+
+
 
     // 7. como agregar los elementos "objeto" al carrito de compras.
     articulosCarrito = [...articulosCarrito, infoCurso];
@@ -65,7 +71,7 @@ function agregarCurso(e) {
 
         // Recorre el carrito y genera el HTML
         articulosCarrito.forEach( curso => {
-            const {imagen, titulo, precio, cantidad}
+            const {imagen, titulo, precio, cantidad, id};
             const row = document.createElement('tr');
             row.innerHTML = `
                 
@@ -86,7 +92,7 @@ function agregarCurso(e) {
                 </td>
 
                 <td>
-                    <a href="#" class="borrar-curso" data-id=${curso.id}> X </a>
+                    <a href="#" class="borrar-curso" data-id=${id}> X </a>
                 </td>
             
             
