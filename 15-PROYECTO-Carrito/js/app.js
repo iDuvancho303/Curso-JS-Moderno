@@ -60,6 +60,7 @@ function agregarCurso(e) {
     function carritoHTML() {
 
         // Limpiar el HTML
+        limpiarHTML();
 
 
         // Recorre el carrito y genera el HTML
@@ -81,7 +82,7 @@ function agregarCurso(e) {
 
     // Elmina los curos del tbody
    function limpiarHTML() {
-    
+    contenedorCarrito.innerHTML = '';
    } 
  
 
